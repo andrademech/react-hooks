@@ -13,12 +13,12 @@ function App() {
     console.log('componentDidUpdate');
   });
 
-  // componentDidMount => execulta 1 x
+  // componentDidMount => executa 1 x
   useEffect(() => {
     console.log('componentDidMount');
   }, []);
 
-  // Com dependência => execulta toda vez que a dependência mudar
+  // Com dependência => executa toda vez que a dependência mudar
   useEffect(() => {
     console.log('Contador mudou para: ', counter);
   }, [counter]);
